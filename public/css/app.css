@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Frame 8 */
+.login-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+/* Login */
+.login-container::before {
+    content: '';
+    position: absolute;
+    width: 720px;
+    height: 1024px;
+    left: 0;
+    top: 0;
+    background: #03A08E;
+    border-radius: 0 20px 20px 0;
+    background-image: url('../images/login.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Wave Background */
+.background-wave {
+    position: absolute;
+    width: 720px;
+    height: 288px;
+    left: 0;
+    top: 736px;
+    background: #531C7E;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    
+}
+
+/* Login Form */
+.login-form {
+    position: absolute;
+    width: 546px;
+    height: 505px;
+    left: 804px;
+    top: 259px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+
+/* Header */
+.login-form h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+}
+
+/* Form Group */
+.form-group {
+    width: 524px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"] {
+    box-sizing: border-box;
+    width: 524px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: 24px; /* Menambahkan padding kiri untuk teks */
+}
